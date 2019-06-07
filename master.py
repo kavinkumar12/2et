@@ -1,8 +1,7 @@
-
-
-a,b=map(int,input().split())
-s=len(str(a))
-L=list(combinations(str(a),s-b))
+from itertools import combinations
+b,a=map(int,input().split())
+s=len(str(b))
+L=list(combinations(str(b),s-a))
 L=(sorted(L))
-D=" ".join(L[0])
+D="".join(L[0])
 print(D)
